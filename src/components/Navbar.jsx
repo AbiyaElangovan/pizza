@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux" ;
+
 import { logoutUser } from "../Actions/userActions";
 export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
@@ -9,6 +11,8 @@ export default function Navbar() {
   const { currentUser } = userstate;
   const isAdmin = currentUser?.isAdmin;
   const dispatch = useDispatch();
+  
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">

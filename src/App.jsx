@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import './App.css';
 import 'bootstrap';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
@@ -17,14 +17,14 @@ function App() {
 
       
        <Router>
-        <Switch>
+        <Routes>
           <Route path="/" exact component={Homescreen} />
           <Route path="/cart" exact component={Cartscreen}/>
           <Route path="/register" exact component={Registerscreen}/>
           <Route path='/login' exact component={Loginscreen}/>
           <Route path='/orders' exact component={Ordersscreen}/>
           <Route path='/admin' component={Adminscreen}/>
-          </Switch>
+          </Routes>
           </Router>
        
     </div>
