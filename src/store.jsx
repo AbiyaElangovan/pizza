@@ -4,7 +4,7 @@ import {createStore , applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 
 import {composeWithDevTools} from 'redux-devtools-extension'
-import { getAllPizzasReducer , addPizzaReducer , getPizzaByIdReducer , editPizzaReducer} from './reducers/pizzaReducers'
+import { getAllPizzasReducer , addPizzaReducer , getPizzaByIdReducer , editPizzaReducer} from './Reducers/pizzaReducer'
 import { cartReducer } from './Reducers/cartReducer'
 import { loginUserReducer, registerUserReducer  , getAllUsersReducer} from './Reducers/userReducer'
 import { placeOrderReducer , getUserOrdersReducer , getAllOrdersReducer } from './Reducers/orderReducer'
