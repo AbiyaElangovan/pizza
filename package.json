@@ -21,7 +21,10 @@
     "react-router": "^6.15.0",
     "react-router-dom": "^6.15.0",
     "react-router-link": "^2.0.2",
-    "react-stripe-checkout": "^2.6.3"
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
