@@ -1,8 +1,5 @@
 /* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Provider } from "react-redux" ;
 
 import { logoutUser } from "../Actions/userActions";
 export default function Navbar() {
@@ -17,7 +14,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <a className="navbar-brand" href="/">
-          Hot and Fresh Pizzas
+          Hot and Fresh Pizzas 🍕🍔
         </a>
         <button
           className="navbar-toggler"
@@ -79,12 +76,20 @@ export default function Navbar() {
                 </a>
               </li>
             )}
-
+           
             <li className="nav-item">
               <a className="nav-link" href="/cart">
                 Cart {cartstate.cartItems.length}
               </a>
             </li>
+            <br />
+            <hr />
+            <button>Place Order</button>
+            <br />
+            <hr />
+
+            <button>Available Offers</button>
+
           </ul>
         </div>
       </nav>

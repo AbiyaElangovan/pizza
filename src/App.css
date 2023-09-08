@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-size: larger;
+  text-decoration-color: blue;
+  color: rgb(229, 19, 141);
 }
 
 .App-logo {
@@ -35,4 +38,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Navbar{
+  text-align: center;
+  text-decoration-color: black;
+  color: blue;
 }
